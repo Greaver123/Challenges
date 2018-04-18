@@ -11,11 +11,11 @@ namespace Challenges.Tests.Miscellaneous
     [TestClass]
     public class ArrayReverserTest
     {
-        private ArrayReverser reverser;
+        private ArrayReverser<int> reverser;
 
         public ArrayReverserTest()
         {
-            reverser = new ArrayReverser();
+            reverser = new ArrayReverser<int>();
         }
 
         [TestMethod]
@@ -75,6 +75,36 @@ namespace Challenges.Tests.Miscellaneous
             var actualResult = reverser.Reverse(numbers);
 
             CollectionAssert.AreEqual(expectedResult, actualResult);
+        }
+
+
+        [TestMethod]
+        [TestCategory("builtIn")]
+        public void ReverseBuiltIN_ArrayWithOddNumberOfElements_ReversedListOfNumbers()
+        {
+
+            var numbers = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+
+            var expectedResult = new int[] { 7, 6, 5, 4, 3, 2, 1 };
+
+            var actualResult = reverser.ReverseBuiltIn(numbers);
+
+            CollectionAssert.AreEqual(expectedResult, actualResult);
+
+        }
+        [TestMethod]
+        [TestCategory("builtIn")]
+        public void ReverseBuiltIn_ArrayWithEvenNumberOfElements_ReversedListOfNumbers()
+        {
+
+            var numbers = new int[] { 1, 2, 3, 4, 5, 6, };
+
+            var expectedResult = new int[] { 6, 5, 4, 3, 2, 1 };
+
+            var actualResult = reverser.ReverseBuiltIn(numbers);
+
+            CollectionAssert.AreEqual(expectedResult, actualResult);
+
         }
     }
 }

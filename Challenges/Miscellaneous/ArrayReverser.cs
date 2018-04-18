@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Challenges.Miscellaneous
 {
-    public class ArrayReverser
+    public class ArrayReverser<T>
     {
 
-        public int[] Reverse(int[] array)
+        public T[] Reverse(T[] array)
         {
             if (array.Count()==0)
             {
@@ -17,7 +17,7 @@ namespace Challenges.Miscellaneous
             }
             for (int i = 0, j = array.Count()-1; i != j; i++)
             {
-                int temp = array[i];
+                T temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
                 j--;
@@ -29,6 +29,12 @@ namespace Challenges.Miscellaneous
             }
             return array;
 
+        }
+
+        public T[] ReverseBuiltIn(T[] array)
+        {
+            Array.Reverse(array);
+            return array;
         }
     }
 }
