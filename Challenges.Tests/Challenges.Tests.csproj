@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Miscellaneous\ArrayReverserTest.cs" />
+    <Compile Include="Miscellaneous\NumberToStringFormatterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
