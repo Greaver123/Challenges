@@ -77,7 +77,6 @@ namespace Challenges.Tests.Miscellaneous
             CollectionAssert.AreEqual(expectedResult, actualResult);
         }
 
-
         [TestMethod]
         [TestCategory("builtIn")]
         public void ReverseBuiltIN_ArrayWithOddNumberOfElements_ReversedListOfNumbers()
@@ -92,6 +91,7 @@ namespace Challenges.Tests.Miscellaneous
             CollectionAssert.AreEqual(expectedResult, actualResult);
 
         }
+
         [TestMethod]
         [TestCategory("builtIn")]
         public void ReverseBuiltIn_ArrayWithEvenNumberOfElements_ReversedListOfNumbers()
