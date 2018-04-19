@@ -55,6 +55,7 @@
     <Compile Include="Miscellaneous\ArrayReverserTest.cs" />
     <Compile Include="Miscellaneous\NumberToStringFormatterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings\WordEndingCounterTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Challenges\Challenges.csproj">
