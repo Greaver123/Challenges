@@ -47,6 +47,6 @@ namespace Challenges.Miscellaneous
         }
 
 
-
+//tutaj jest jakaś zmiana
     }
 }
